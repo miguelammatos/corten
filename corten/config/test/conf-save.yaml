@@ -1,0 +1,13 @@
+churn_file: config/churn-test.yaml
+
+seed: 0
+
+op_duration: 200
+
+save: 300
+save_filename: save.bin
+
+n: 10
+fanout: 2
+cycles: 2
+period: 200

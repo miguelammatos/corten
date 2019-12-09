@@ -1,0 +1,5 @@
+n: 10
+
+churn_file: config/churn-none.yaml
+
+seed: 0

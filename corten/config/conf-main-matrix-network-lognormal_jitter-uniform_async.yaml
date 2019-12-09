@@ -1,0 +1,27 @@
+churn_file: config/churn-test.yaml
+
+seed: 0
+
+asynchrony: 
+  type: UniformAsynchrony
+  uniform: 
+    low: -0.1
+    high: 0.1
+
+network: 
+  type: MatrixNetwork
+  latency_file: "data/pl_226nodes.latencies"
+  n: 10
+  jitter: 
+    type: LogNormalJitter
+    log_normal: 
+      mean: 0.0
+      std_dev: 0.1
+  loss: 0.0
+
+op_duration: 200
+
+n: 10
+fanout: 2
+cycles: 2
+period: 200

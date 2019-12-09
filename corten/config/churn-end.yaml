@@ -1,0 +1,11 @@
+churn:
+  - [0, join, 1.0]
+  - [100, leave-id, 9]
+  - [220, leave, 5]
+  - [250, recover-id, 9]
+  - [320, leave, 0.4]
+  - [350, recover, 0.5]
+  - [500, leave-id, 9]
+  - [600, recover, 0.5]
+  - [650, end]
+  

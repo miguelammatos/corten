@@ -1,0 +1,10 @@
+churn_file: config/churn-empty.yaml
+
+load: save.bin
+
+new_seed: 20
+
+n: 10
+fanout: 2
+cycles: 2
+period: 200

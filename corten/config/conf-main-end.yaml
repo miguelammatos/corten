@@ -1,0 +1,14 @@
+churn_file: config/churn-end.yaml
+
+seed: 0
+
+save: 300
+save_filename: main_saved_state.bin
+save_and_stop: false
+
+op_duration: 200
+
+n: 10
+fanout: 2
+cycles: 2
+period: 200

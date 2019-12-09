@@ -1,0 +1,41 @@
+churn_file: config/conf-chord.yaml
+
+seed: 0
+
+# asynchrony: 
+#   type: UniformAsynchrony
+#   uniform:
+#     low: -0.1
+#     high: 0.1
+
+# op_duration: 100
+
+asynchrony: 
+  type: NoAsynchrony
+
+network: 
+  type: ConstantNetwork
+  latency: 10
+  jitter:
+    type: NoJitter
+  loss: 0.0
+
+loss: 0.0
+
+save: 1000
+save_filename: "chord-stable-1000_m64-end1000.bin"
+save_and_stop: true
+
+n: 1000
+
+m: 64 # identifier space from 0 to 2^m - 1
+successor_list_size: 8
+
+period_stabilize: 100
+period_fix_fingers: 100
+period_check_predecessor: 800
+count: 0
+
+
+churn:
+  - [0, join, 1.0]

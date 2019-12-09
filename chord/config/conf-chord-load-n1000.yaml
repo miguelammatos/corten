@@ -1,0 +1,11 @@
+churn_file: config/conf-chord-load-n1000.yaml
+
+load: "chord-n1000_m64-end100K.bin"
+
+n: 1000
+
+m: 64 # identifier space from 0 to 2^m - 1
+
+
+churn:
+  - [110000, "end"]

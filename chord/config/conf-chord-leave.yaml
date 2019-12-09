@@ -1,0 +1,28 @@
+churn_file: config/churn-chord-leave.yaml
+
+seed: 0
+
+asynchrony: 
+  type: NoAsynchrony
+
+network: 
+  type: ConstantNetwork
+  latency: 10
+  jitter:
+    type: NoJitter
+  loss: 0.0
+
+op_duration: 100
+
+# save: 100000
+# save_filename: "chord-stable-10_m10.bin"
+
+n: 10 #n: 1000
+
+# 32
+m: 10 # identifier space from 0 to 2^m - 1
+
+period_stabilize: 100
+period_fix_fingers: 100
+period_check_predecessor: 800
+count: 40000

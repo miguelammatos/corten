@@ -1,0 +1,14 @@
+churn_file: config/churn-test.yaml
+
+seed: 0
+
+#save: 300
+save_filename: main_saved_state_ctrlc.bin
+#save_and_stop: true
+
+op_duration: 200
+
+n: 1000000
+fanout: 2
+cycles: 100
+period: 200

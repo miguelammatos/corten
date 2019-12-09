@@ -1,0 +1,7 @@
+File pl_22nodes.latencies contains pairwise measurements taken from 226 PlanetLab nodes.
+The data is split into three columns as follows:
+ - source node
+ - target node
+ - measured latency in ms
+
+The original data was gathered by Valerio Schiavoni.

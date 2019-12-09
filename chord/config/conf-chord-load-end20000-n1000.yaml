@@ -1,0 +1,7 @@
+churn_file: config/churn-chord-end20000.yaml
+
+load: "chord-maintainer-n1000_m64-end10000.bin"
+
+n: 1000
+
+m: 64 # identifier space from 0 to 2^m - 1

@@ -1,0 +1,20 @@
+churn_file: config/churn-none.yaml
+
+seed: 0
+
+asynchrony: 
+  type: NoAsynchrony
+
+network: 
+  type: ConstantNetwork
+  latency: 100
+  jitter: 
+    type: NoJitter
+  loss: 0.0
+
+op_duration: 0
+
+n: 10
+fanout: 2
+cycles: 1
+period: 0
