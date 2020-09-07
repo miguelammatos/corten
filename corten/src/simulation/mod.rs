@@ -1044,6 +1044,11 @@ impl SimulationKernel {
                             let p = self.get_process(event.target).unwrap();
                             let process = p.clone();
 
+
+                            //skip events for failed processes
+                            if !self.is_process_up(p.borrow().id) {
+                                continue;
+                            }
                             if let EventKind::Local(generation, _, _) = event.kind {
                                 if p.borrow().get_generation() != generation {
                                     continue;
